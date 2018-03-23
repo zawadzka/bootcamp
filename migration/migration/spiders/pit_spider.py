@@ -87,5 +87,6 @@ class newCrawler(CrawlSpider):
         converter = html2text.HTML2Text()
         converter.ignore_links = True
         item['text']=converter.handle(response.css('section.lev2').extract_first())
+        item['h1']=converter.handle(response.css('h1').extract_first())
 
         return item

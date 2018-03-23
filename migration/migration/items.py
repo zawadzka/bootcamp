@@ -16,3 +16,4 @@ class DrugiItem(scrapy.Item):
     #link_title = scrapy.Field()
     url = scrapy.Field()
     text = scrapy.Field()
+    h1 = scrapy.Field()
