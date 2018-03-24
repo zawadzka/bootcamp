@@ -79,7 +79,7 @@ MONGODB_USERNAME = "" # Change in prod
 MONGODB_PASSWORD = "" # Change in prod
 #'migration.pipelines.ExtractArticlePipeline':800}
 FEED_FORMAT='csv'
-FEED_URI='dane-duze.csv'
+FEED_URI='dane-bez-param.csv'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
