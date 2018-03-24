@@ -77,7 +77,7 @@ class newCrawler(CrawlSpider):
     allowed_domains = ['pit.pl']
     start_urls = ['http://www.pit.pl']
     rules = (
-        Rule(LinkExtractor(allow=('pit.pl/.*\d+/$'), canonicalize=True, unique=True),
+        Rule(LinkExtractor(allow=(), deny=(['.*module.*','.*page.*','.*deklaracje_.*','.*att.*']), canonicalize=True, unique=True),
              callback="parse_items",
              follow=True),)
     def parse_items(self, response):
